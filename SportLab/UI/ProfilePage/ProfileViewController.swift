@@ -16,7 +16,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func setupUI() {
-        view.backgroundColor = .secondarySystemBackground
+        view.backgroundColor = .white
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(image: UIImage(systemName: "gear"), style: .done, target: self, action: #selector(didTapBarButton))
     }

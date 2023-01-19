@@ -17,7 +17,7 @@ class SettingsViewController: UIViewController {
     }
     
     private func setupUI() {
-        view.backgroundColor = .secondarySystemBackground
+        view.backgroundColor = .white
     }
 //        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Сохранить", style: .plain, target: self, action: #selector(didTapBarButton))
 //    }

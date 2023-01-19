@@ -19,7 +19,7 @@ extension MOUserInfo {
     @NSManaged public var currentWeight: Int32
     @NSManaged public var targetWeight: Int32
     @NSManaged public var name: String
-    @NSManaged public var image: Data?
+    @NSManaged public var image: Data
 
 }
 

@@ -12,16 +12,22 @@ struct Exercise {
     var name: String
     var group: MuscleGroup
     var imageName: String
+    var record: Int
+    var uniqueID: UUID?
     
-    init(name: String, group: MuscleGroup, imageName: String) {
+    init(name: String, group: MuscleGroup, imageName: String, record: Int, uniqueID: UUID?) {
         self.name = name
         self.group = group
         self.imageName = imageName
+        self.record = record
+        self.uniqueID = uniqueID
     }
     
     init(from moObject: MOExercise) {
         self.name = moObject.name
         self.imageName = moObject.imageName
+        self.record = Int(moObject.record)
+        self.uniqueID = moObject.uniqueID
         guard let group = MuscleGroup.allCases.filter({ $0.title == moObject.group }).first else {
             self.group = .back
             return
@@ -34,6 +40,8 @@ struct Exercise {
         moObj.name = name
         moObj.imageName = imageName
         moObj.group = group.title
+        moObj.record = Int32(record)
+        moObj.uniqueID = uniqueID
         return moObj
     }
 }

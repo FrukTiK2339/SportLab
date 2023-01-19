@@ -15,7 +15,7 @@ class HomePageViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        view.backgroundColor = .white
 //        title = "SportLab"
         
         configureSections()
@@ -59,7 +59,7 @@ class HomePageViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     private func setupUI() {
         collectionView?.frame = view.bounds
-        collectionView?.backgroundColor = .secondarySystemBackground
+        collectionView?.backgroundColor = .white
     }
     
     func layout(for section: Int) -> NSCollectionLayoutSection {

@@ -23,8 +23,9 @@ class ResourceLoader: ResourceLoaderProtocol {
     var bigPosts = [Post]()
     var smallArticles = [Post]()
     var exercises: [Exercise]?
-    var userData: UserData?
     var training: [Training]?
+    var goals: [Goal]?
+    var userInfo: UserInfo?
     
     func loadAppData() {
         coreDataManager.whereIsDB()
@@ -49,16 +50,12 @@ class ResourceLoader: ResourceLoaderProtocol {
         taskGroup.notify(queue: .main) {
             NotificationCenter.default.post(name: Notification.Name.successLoadingAppData, object: nil)
         }
+        
+        loadUserData()
     }
     
     func loadUserData() {
-        loadTraining()
-    }
-    
-    func loadTraining() {
-        coreDataManager.loadTraining { training in
-            self.training = training
-        }
+        self.goals = coreDataManager.loadGoals()
     }
     
     func save(userTraining: Training) {
@@ -66,7 +63,7 @@ class ResourceLoader: ResourceLoaderProtocol {
     }
     
     //MARK: - Private
-    private let coreDataManager = CoreDataManager()
+    private let coreDataManager = CoreDataManager.shared
     
     private let taskGroup = DispatchGroup()
 }

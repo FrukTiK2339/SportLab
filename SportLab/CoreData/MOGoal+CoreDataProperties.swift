@@ -17,7 +17,7 @@ extension MOGoal {
     }
 
     @NSManaged public var record: Int32
-    @NSManaged public var exercise: MOExercise?
+    @NSManaged public var exercise: MOExercise
 
 }
 

@@ -94,7 +94,7 @@ class JSONParser {
                 for exDict in exDicts {
                     if let name = exDict["name"] as? String,
                        let imageName = exDict["image"] as? String {
-                        let newExercise = Exercise(name: name, group: group, imageName: imageName)
+                        let newExercise = Exercise(name: name, group: group, imageName: imageName, record: 0, uniqueID: UUID())
                         exercises.append(newExercise)
                     }
                 }

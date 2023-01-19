@@ -1,5 +1,5 @@
 //
-//  UserData.swift
+//  Training.swift
 //  SportLab
 //
 //  Created by Дмитрий Рыбаков on 12.01.2023.
@@ -7,17 +7,6 @@
 
 import UIKit
 import CoreData
-
-struct UserData {
-    var goals: [Goal]
-    var userInfo: UserInfo
-    
-}
-
-struct Goal {
-    var exercise: Exercise
-    var record: Int
-}
 
 struct Training {
     var title: String
@@ -30,8 +19,9 @@ struct Training {
     
     init(from moObject: MOTraining) {
         self.title = moObject.title
-        self.exercises = (moObject.exercises?.array as? [MOExercise])?.map {
+        let exercises = (moObject.exercises?.array as? [MOExercise])?.map {
             Exercise(from: $0) } ?? []
+        self.exercises = exercises.sorted(by: {$0.name < $1.name})
     }
     
     func toMoObject(context: NSManagedObjectContext) -> MOTraining {
@@ -44,13 +34,3 @@ struct Training {
         return moObj
     }
 }
-
-struct UserInfo {
-    var name: String
-    var targetWeight: Int
-    var currentWeight: Int
-}
-
-
-
-

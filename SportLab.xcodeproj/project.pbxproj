@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFB8B0082976F12600DE1608 /* ModelSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB8B0072976F12600DE1608 /* ModelSheetPresentationController.swift */; };
+		EFB8B00A2976F16400DE1608 /* ModalSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB8B0092976F16400DE1608 /* ModalSheetViewController.swift */; };
+		EFCF72452977F2A2002ECD20 /* DetailsModalSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF72442977F2A2002ECD20 /* DetailsModalSheetViewController.swift */; };
+		EFCF724729782A3D002ECD20 /* TrainingPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCF724629782A3D002ECD20 /* TrainingPageTableViewCell.swift */; };
 		EFD9DA3F2970581100862D9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA3E2970581100862D9D /* AppDelegate.swift */; };
 		EFD9DA412970581100862D9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA402970581100862D9D /* SceneDelegate.swift */; };
 		EFD9DA492970581100862D9D /* SportLab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA472970581100862D9D /* SportLab.xcdatamodeld */; };
@@ -23,7 +27,6 @@
 		EFD9DA712970595B00862D9D /* TrainingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA642970595B00862D9D /* TrainingPageViewController.swift */; };
 		EFD9DA722970595B00862D9D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA662970595B00862D9D /* ProfileViewController.swift */; };
 		EFD9DA732970595B00862D9D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA672970595B00862D9D /* SettingsViewController.swift */; };
-		EFD9DA782970596E00862D9D /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA752970596E00862D9D /* UserData.swift */; };
 		EFD9DA792970596E00862D9D /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA762970596E00862D9D /* Exercise.swift */; };
 		EFD9DA7A2970596E00862D9D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA772970596E00862D9D /* Post.swift */; };
 		EFD9DA7C2970598500862D9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFD9DA7B2970598500862D9D /* Main.storyboard */; };
@@ -46,9 +49,19 @@
 		EFD9DAA329705B3000862D9D /* MOExercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA9B29705B3000862D9D /* MOExercise+CoreDataProperties.swift */; };
 		EFD9DAA429705B3000862D9D /* MOGoal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA9C29705B3000862D9D /* MOGoal+CoreDataClass.swift */; };
 		EFD9DAA529705B3000862D9D /* MOGoal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DA9D29705B3000862D9D /* MOGoal+CoreDataProperties.swift */; };
+		EFD9DAA729705C7E00862D9D /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DAA629705C7E00862D9D /* Training.swift */; };
+		EFD9DAA929705C9A00862D9D /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DAA829705C9A00862D9D /* Goal.swift */; };
+		EFD9DAAB29705CAF00862D9D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DAAA29705CAF00862D9D /* UserInfo.swift */; };
+		EFD9DAAD2970675700862D9D /* GoalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DAAC2970675700862D9D /* GoalsTableViewCell.swift */; };
+		EFD9DAAF2970679F00862D9D /* ConstructorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD9DAAE2970679F00862D9D /* ConstructorTableViewCell.swift */; };
+		EFDECC8B2976CD3B00D753C5 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDECC8A2976CD3B00D753C5 /* DetailsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EFB8B0072976F12600DE1608 /* ModelSheetPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSheetPresentationController.swift; sourceTree = "<group>"; };
+		EFB8B0092976F16400DE1608 /* ModalSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSheetViewController.swift; sourceTree = "<group>"; };
+		EFCF72442977F2A2002ECD20 /* DetailsModalSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModalSheetViewController.swift; sourceTree = "<group>"; };
+		EFCF724629782A3D002ECD20 /* TrainingPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingPageTableViewCell.swift; sourceTree = "<group>"; };
 		EFD9DA3B2970581100862D9D /* SportLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD9DA3E2970581100862D9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFD9DA402970581100862D9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +80,6 @@
 		EFD9DA642970595B00862D9D /* TrainingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingPageViewController.swift; sourceTree = "<group>"; };
 		EFD9DA662970595B00862D9D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EFD9DA672970595B00862D9D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		EFD9DA752970596E00862D9D /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		EFD9DA762970596E00862D9D /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		EFD9DA772970596E00862D9D /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		EFD9DA7B2970598500862D9D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +102,12 @@
 		EFD9DA9B29705B3000862D9D /* MOExercise+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MOExercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EFD9DA9C29705B3000862D9D /* MOGoal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MOGoal+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EFD9DA9D29705B3000862D9D /* MOGoal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MOGoal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EFD9DAA629705C7E00862D9D /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		EFD9DAA829705C9A00862D9D /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		EFD9DAAA29705CAF00862D9D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		EFD9DAAC2970675700862D9D /* GoalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsTableViewCell.swift; sourceTree = "<group>"; };
+		EFD9DAAE2970679F00862D9D /* ConstructorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorTableViewCell.swift; sourceTree = "<group>"; };
+		EFDECC8A2976CD3B00D753C5 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EFB8B0062976F10B00DE1608 /* ModalSheet */ = {
+			isa = PBXGroup;
+			children = (
+				EFB8B0072976F12600DE1608 /* ModelSheetPresentationController.swift */,
+				EFB8B0092976F16400DE1608 /* ModalSheetViewController.swift */,
+			);
+			path = ModalSheet;
+			sourceTree = "<group>";
+		};
 		EFD9DA322970581100862D9D = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +173,7 @@
 				EFD9DA5D2970595B00862D9D /* TabBar */,
 				EFD9DA5F2970595B00862D9D /* GoalsPage */,
 				EFD9DA612970595B00862D9D /* TrainingPage */,
+				EFB8B0062976F10B00DE1608 /* ModalSheet */,
 				EFD9DA652970595B00862D9D /* ProfilePage */,
 			);
 			path = UI;
@@ -182,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				EFD9DA602970595B00862D9D /* GoalsViewController.swift */,
+				EFD9DAAC2970675700862D9D /* GoalsTableViewCell.swift */,
 			);
 			path = GoalsPage;
 			sourceTree = "<group>";
@@ -190,8 +219,12 @@
 			isa = PBXGroup;
 			children = (
 				EFD9DA622970595B00862D9D /* ConstructorViewController.swift */,
-				EFD9DA632970595B00862D9D /* DetailsViewController.swift */,
+				EFD9DAAE2970679F00862D9D /* ConstructorTableViewCell.swift */,
 				EFD9DA642970595B00862D9D /* TrainingPageViewController.swift */,
+				EFCF724629782A3D002ECD20 /* TrainingPageTableViewCell.swift */,
+				EFD9DA632970595B00862D9D /* DetailsViewController.swift */,
+				EFDECC8A2976CD3B00D753C5 /* DetailsTableViewCell.swift */,
+				EFCF72442977F2A2002ECD20 /* DetailsModalSheetViewController.swift */,
 			);
 			path = TrainingPage;
 			sourceTree = "<group>";
@@ -208,9 +241,11 @@
 		EFD9DA742970596E00862D9D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EFD9DA752970596E00862D9D /* UserData.swift */,
 				EFD9DA762970596E00862D9D /* Exercise.swift */,
 				EFD9DA772970596E00862D9D /* Post.swift */,
+				EFD9DAA629705C7E00862D9D /* Training.swift */,
+				EFD9DAA829705C9A00862D9D /* Goal.swift */,
+				EFD9DAAA29705CAF00862D9D /* UserInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -338,28 +373,37 @@
 				EFD9DA6B2970595B00862D9D /* BigPostCollectionViewCell.swift in Sources */,
 				EFD9DA6D2970595B00862D9D /* TabBarController.swift in Sources */,
 				EFD9DA91297059CF00862D9D /* DLog.swift in Sources */,
+				EFB8B0082976F12600DE1608 /* ModelSheetPresentationController.swift in Sources */,
 				EFD9DA3F2970581100862D9D /* AppDelegate.swift in Sources */,
 				EFD9DA732970595B00862D9D /* SettingsViewController.swift in Sources */,
 				EFD9DA6A2970595B00862D9D /* HomePageSection.swift in Sources */,
+				EFD9DAAD2970675700862D9D /* GoalsTableViewCell.swift in Sources */,
+				EFD9DAA929705C9A00862D9D /* Goal.swift in Sources */,
 				EFD9DA88297059BB00862D9D /* DI.swift in Sources */,
 				EFD9DA7E2970599400862D9D /* AppConsts.swift in Sources */,
+				EFD9DAAB29705CAF00862D9D /* UserInfo.swift in Sources */,
 				EFD9DAA129705B3000862D9D /* MOTraining+CoreDataProperties.swift in Sources */,
 				EFD9DA9E29705B3000862D9D /* MOUserInfo+CoreDataClass.swift in Sources */,
+				EFD9DAA729705C7E00862D9D /* Training.swift in Sources */,
+				EFCF72452977F2A2002ECD20 /* DetailsModalSheetViewController.swift in Sources */,
 				EFD9DA692970595B00862D9D /* SmallArticleCollectionViewCell.swift in Sources */,
 				EFD9DA8D297059BB00862D9D /* ResourceLoader.swift in Sources */,
 				EFD9DA682970595B00862D9D /* HomePageViewController.swift in Sources */,
 				EFD9DA6E2970595B00862D9D /* GoalsViewController.swift in Sources */,
 				EFD9DA412970581100862D9D /* SceneDelegate.swift in Sources */,
 				EFD9DAA529705B3000862D9D /* MOGoal+CoreDataProperties.swift in Sources */,
-				EFD9DA782970596E00862D9D /* UserData.swift in Sources */,
 				EFD9DA95297059EF00862D9D /* CoreDataManager.swift in Sources */,
 				EFD9DAA429705B3000862D9D /* MOGoal+CoreDataClass.swift in Sources */,
 				EFD9DA722970595B00862D9D /* ProfileViewController.swift in Sources */,
+				EFD9DAAF2970679F00862D9D /* ConstructorTableViewCell.swift in Sources */,
 				EFD9DA92297059CF00862D9D /* Extensions.swift in Sources */,
+				EFCF724729782A3D002ECD20 /* TrainingPageTableViewCell.swift in Sources */,
 				EFD9DA702970595B00862D9D /* DetailsViewController.swift in Sources */,
 				EFD9DA7A2970596E00862D9D /* Post.swift in Sources */,
+				EFDECC8B2976CD3B00D753C5 /* DetailsTableViewCell.swift in Sources */,
 				EFD9DAA229705B3000862D9D /* MOExercise+CoreDataClass.swift in Sources */,
 				EFD9DA6F2970595B00862D9D /* ConstructorViewController.swift in Sources */,
+				EFB8B00A2976F16400DE1608 /* ModalSheetViewController.swift in Sources */,
 				EFD9DA792970596E00862D9D /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,8 +549,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,8 +578,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

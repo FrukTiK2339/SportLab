@@ -19,6 +19,8 @@ extension MOExercise {
     @NSManaged public var group: String
     @NSManaged public var imageName: String
     @NSManaged public var name: String
+    @NSManaged public var record: Int32
+    @NSManaged public var uniqueID: UUID?
     @NSManaged public var goal: MOGoal?
     @NSManaged public var training: NSSet?
 

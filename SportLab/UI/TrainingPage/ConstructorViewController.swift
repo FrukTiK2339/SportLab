@@ -29,7 +29,7 @@ class ConstructorViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     private func setupUI() {
-        view.backgroundColor = .secondarySystemBackground
+        view.backgroundColor = .white
         view.addSubview(tableView)
         view.addSubview(textField)
         
@@ -50,7 +50,6 @@ class ConstructorViewController: UIViewController, UITableViewDelegate, UITableV
             DLog("Error! No basic exercises have been loaded.")
             return
         }
-        DLog(exercises.count)
         self.exercises = exercises
     }
     
@@ -90,8 +89,9 @@ class ConstructorViewController: UIViewController, UITableViewDelegate, UITableV
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = .secondarySystemBackground
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.backgroundColor = .white
+        tableView.register(ConstructorTableViewCell.self, forCellReuseIdentifier: ConstructorTableViewCell.identifier)
+        tableView.rowHeight = 104
     }
     
     private func setupTextField() {
@@ -104,7 +104,7 @@ class ConstructorViewController: UIViewController, UITableViewDelegate, UITableV
         textField.autocorrectionType = .no
         textField.layer.masksToBounds = true
         textField.layer.cornerRadius = 8.0
-        textField.backgroundColor = .secondarySystemBackground
+        textField.backgroundColor = .white
         textField.layer.borderWidth = 1.0
         textField.layer.borderColor = UIColor.gray.cgColor
     }
@@ -130,9 +130,10 @@ class ConstructorViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Упражение №\(indexPath.row)"
-        cell.selectionStyle = .none
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ConstructorTableViewCell.identifier, for: indexPath) as? ConstructorTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.configure(with: exercises.filter{ $0.group == sections[indexPath.section] }[indexPath.row])
         return cell
     }
     

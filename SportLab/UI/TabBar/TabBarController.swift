@@ -38,10 +38,10 @@ class TabBarController: UITabBarController {
         let nav3 = UINavigationController(rootViewController: goalsPage)
         let nav4 = UINavigationController(rootViewController: profilePage)
         
-        nav1.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house.circle"), tag: 1)
-        nav2.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "safari"), tag: 2)
-        nav3.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "bell"), tag: 3)
-        nav4.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "person.circle"), tag: 4)
+        nav1.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "homeLogo"), tag: 1)
+        nav2.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "trainingLogo"), tag: 2)
+        nav3.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "goalsLogo"), tag: 3)
+        nav4.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "profileLogo"), tag: 4)
         
         nav1.title = ""
         nav2.title = ""
