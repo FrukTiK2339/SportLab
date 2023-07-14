@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SportLab
 //
-//  Created by Дмитрий Рыбаков on 12.01.2023.
+//  Created by Дмитрий Рыбаков on 14.07.2023.
 //
 
 import UIKit
@@ -47,7 +47,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-//        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 

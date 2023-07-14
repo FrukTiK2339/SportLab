@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SportLab
 //
-//  Created by Дмитрий Рыбаков on 12.01.2023.
+//  Created by Дмитрий Рыбаков on 14.07.2023.
 //
 
 import UIKit
@@ -14,9 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        CoreDataManager.shared.load()
-        
+        // Override point for customization after application launch.
         return true
     }
 
@@ -34,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-    /*
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
@@ -79,6 +76,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-    */
+
 }
 
